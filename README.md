@@ -268,4 +268,7 @@ Execute the unit and integration test suite:
 ---
 
 ## 📄 License
+
+
+This project was developed as part of an academic/hackathon submission. All rights reserved.
 This project is licensed under the [MIT License](LICENSE).
