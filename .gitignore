@@ -1,0 +1,28 @@
+# Maven target directory
+target/
+*.class
+
+# Vaadin frontend generated files
+frontend/generated/
+node_modules/
+
+# IDE and Editor files
+.idea/
+*.iml
+*.iws
+.project
+.classpath
+.settings/
+.vscode/
+
+# Local databases and trace logs
+data/*.trace.db
+data/*.lock.db
+
+# Environment variables
+.env
+.env.local
+
+# OS generated files
+.DS_Store
+Thumbs.db

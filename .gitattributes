@@ -1,0 +1,8 @@
+# Mark frontend files as generated / vendored so GitHub Linguist does not count them
+frontend/** linguist-vendored
+frontend/** linguist-generated=true
+frontend/index.html linguist-detectable=false
+*.html linguist-detectable=false
+*.js linguist-detectable=false
+*.ts linguist-detectable=false
+*.d.ts linguist-detectable=false
