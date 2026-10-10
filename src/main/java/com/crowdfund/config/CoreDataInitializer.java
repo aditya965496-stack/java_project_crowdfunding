@@ -73,7 +73,7 @@ public class CoreDataInitializer {
 
                 // ── Sample Pending UPI Payment for Admin Portal verification ──
                 try {
-                    if (contribRepo.countByStatus(ContributionStatus.PENDING_VERIFICATION) == 0) {
+                    if (contribRepo.findByIdempotencyKey("IDEM-UPI-DEMO-VERIFY1").isEmpty()) {
                         List<Campaign> campaigns = campaignRepo.findByStatus(CampaignStatus.ACTIVE, org.springframework.data.domain.Pageable.unpaged()).getContent();
                         List<User> contributors = userRepo.findByRole(Role.CONTRIBUTOR);
 
